@@ -8,6 +8,7 @@
 '''
 
 import ctypes
+import sys 
 
 class EAHashingAlgorithm():
 
@@ -190,5 +191,5 @@ class EAHashingAlgorithm():
 
 if __name__ == '__main__':
     hashor = EAHashingAlgorithm()
-    print hashor.EAHash('secret answer')
+    print hashor.EAHash(sys.argv[1])
     
